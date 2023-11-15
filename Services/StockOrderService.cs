@@ -19,6 +19,7 @@ namespace stock_to_inventoryy.Services
                 ItemNo="ILN-01", 
                 OrderNo="ILN-01-Martel-receipt", 
                 quantity=50
+
             },
              new StockOrder
             {

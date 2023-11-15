@@ -10,8 +10,8 @@ namespace stock_to_inventoryy.Controllers
     [ApiController]
     public class stockReceiptController : ControllerBase
     {
-        private readonly StockReceiptService _stockReceiptService;
-        public stockReceiptController(StockReceiptService stockReceiptService)
+        private readonly IStockReceipt _stockReceiptService;
+        public stockReceiptController(IStockReceipt stockReceiptService)
         {
             _stockReceiptService = stockReceiptService;
         }

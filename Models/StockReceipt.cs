@@ -1,4 +1,8 @@
-﻿namespace stock_to_inventoryy.Models
+﻿
+using stock_to_inventoryy.Models;
+
+
+namespace stock_to_inventoryy.Models
 {
     public class StockReceipt
     {

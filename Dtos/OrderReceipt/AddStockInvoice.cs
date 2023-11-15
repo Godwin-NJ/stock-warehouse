@@ -13,6 +13,6 @@ namespace stock_to_inventoryy.Dtos.OrderReceipt
         public string? StoreKeeperName { get; set; }
 
         public bool? isReceipt { get; set; } = true;
-        public string? InvoiceNo { get; } = null;
+        public string? InvoiceNo { get; set; } = null;
     }
 }

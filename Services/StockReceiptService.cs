@@ -21,6 +21,7 @@ namespace stock_to_inventoryy.Services
                ItemNo="ILN-01",
               //  OrderNo="ILN-01-Martel-receipt",
                quantity=50,
+               unit=UnitOfMeasure.CTN,
                StoreKeeperName="abdul zakira",
                InvoiceNo="SN-Martel-10years"
             },
@@ -30,6 +31,7 @@ namespace stock_to_inventoryy.Services
               Id = 2,
               StockName="Glenfiddich-10yrs",
               ItemNo="ILN-02",
+               unit=UnitOfMeasure.CTN,
               //  OrderNo="ILN-01-Martel-receipt",
                quantity=50,
                StoreKeeperName="omolade",
