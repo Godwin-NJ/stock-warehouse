@@ -104,8 +104,8 @@ namespace stock_to_inventoryy.Services
                 {
                     throw new Exception($"stock with id : {updateData.Id} not found");
                 }
-                updateData.StockName = data.StockName;
-                updateData.quantity = data.quantity;
+                  data.StockName = updateData.StockName;
+                  data.quantity = updateData.quantity;
 
                 // service_response.Data = _mapper.Map<GetStockOrderDto>(data);
                 // service_response.Data = StockOrderData.Select(c => _mapper.Map<GetStockOrderDto>(c)).ToList();
