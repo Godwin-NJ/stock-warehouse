@@ -1,9 +1,15 @@
 global using  stock_to_inventoryy.Services.Interface;
+global using Microsoft.EntityFrameworkCore;
+global using stock_to_inventoryy.Models;
 using stock_to_inventoryy.Services;
+using stock_to_inventoryy.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddDbContext<DataContext>(options => 
+options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
+);
 builder.Services.AddScoped<IStockOrder, StockOrderService>();
 builder.Services.AddScoped<IStockReceipt, StockReceiptService>();
 builder.Services.AddControllers();
